@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccm7gr61wnc7s"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_4aim4"]
+[ext_resource type="PackedScene" uid="uid://dvftylj6u53ns" path="res://heart_bar.tscn" id="1_shx48"]
+[ext_resource type="PackedScene" uid="uid://jwo7vts0f303" path="res://minimap.tscn" id="3_npqfu"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4aim4")
+
+[node name="HeartBar" parent="." instance=ExtResource("1_shx48")]
+layout_mode = 0
+
+[node name="Minimap" parent="." instance=ExtResource("3_npqfu")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -215.287
+offset_top = -200.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0

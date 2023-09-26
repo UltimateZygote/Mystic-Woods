@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvftylj6u53ns"]
+
+[ext_resource type="Texture2D" uid="uid://byi1mjo8kkmqr" path="res://mystic_woods/sprites/objects/objects.png" id="1_5s28u"]
+[ext_resource type="Script" path="res://heart_bar.gd" id="1_cetkv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuf0k"]
+atlas = ExtResource("1_5s28u")
+region = Rect2(131, 39, 9, 10)
+
+[node name="HeartBar" type="HBoxContainer"]
+offset_right = 629.0
+offset_bottom = 103.0
+script = ExtResource("1_cetkv")
+
+[node name="H1" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uuf0k")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="H2" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uuf0k")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="H3" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uuf0k")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="H4" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uuf0k")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="H5" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_uuf0k")
+expand_mode = 3
+stretch_mode = 4
